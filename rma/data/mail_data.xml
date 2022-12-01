@@ -7,7 +7,12 @@
         <field name="default" eval="False" />
         <field name="description">RMA in draft state</field>
     </record>
-    
+    <record id="mt_rma_notification" model="mail.message.subtype">
+        <field name="name">RMA Notification</field>
+        <field name="res_model">rma</field>
+        <field name="default" eval="False" />
+        <field name="description">RMA automatic customer notifications</field>
+    </record>
     <!-- rma_team-related subtypes for messaging / Chatter -->
     <record id="mt_rma_team_rma_draft" model="mail.message.subtype">
         <field name="name">Draft RMA</field>
